@@ -16,14 +16,15 @@
     "gulp-cache": "^1.0.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^4.0.0",
+    "gulp-less": "^3.5.0",
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-rsync": "0.0.8",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "smart-grid": "^2.0.1",
-    "vinyl-ftp": "^0.6.0",
-    "gulp-less": "^3.5.0"
+    "vinyl-ftp": "^0.6.0"
   }
 }

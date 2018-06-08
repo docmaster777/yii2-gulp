@@ -13,6 +13,7 @@ var gulp           = require('gulp'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
 		rsync          = require('gulp-rsync');
+        gcmq           = require('gulp-group-css-media-queries');
 		smartgrid      = require('smart-grid');
 
 // gulp.task('browser-sync', function() {
@@ -31,7 +32,7 @@ gulp.task('less', function () {
         .pipe(less())
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleanCSS()) // Опционально, закомментировать при отладке
-        // .pipe(cleanCSS())
+        .pipe(gcmq())
         .pipe(gulp.dest('../web/css'))
 });
 
