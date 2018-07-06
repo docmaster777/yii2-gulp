@@ -28,7 +28,7 @@ var gulp           = require('gulp'),
 // });
 
 gulp.task('less', function () {
-    gulp.src('app/less/main.less')
+    gulp.src('app/less/*.less')
         .pipe(less())
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(cleanCSS()) // Опционально, закомментировать при отладке
